@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: springclouddemo
+  output:
+    ansi:
+      enabled: always
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
