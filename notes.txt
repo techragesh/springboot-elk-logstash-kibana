@@ -19,3 +19,7 @@ docker run -d --name logstash --net micro -p 5000:5000 -v ~/logstash.conf:/usr/s
 Docker for kibana
 =================
 docker run -d --name kibana --net micro -e "ELASTICSEARCH_URL=http://elasticsearch:9200" -p 5601:5601 docker.elastic.co/kibana/kibana:7.6.2
+
+Docker for Application
+=================
+docker run -d --name springbootclouddemo --net micro -p 8080:8080 techragesh/springbootclouddemo
